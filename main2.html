@@ -6,6 +6,8 @@
     <title>DEPEX</title>
 
     <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- Roboto-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
@@ -32,16 +34,22 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="main2.html">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cadastro.html">Cadastro de Projeto</a></li>
+                    <li><a href="andamento.html">Ver andamento dos Projetos</a></li>
                 </ul>
-
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="main1.html">Sair</a></li>
+                </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
+
     <div class="container">
         <img class="logo" src="https://yt3.ggpht.com/-I6xMA4mjCcE/AAAAAAAAAAI/AAAAAAAAAAA/JIFCpRrMCuA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg"/>
     </div>
+
     <hr />
+
     <div class="panel-group">
         <div class="container">
 
@@ -58,11 +66,12 @@
             </div>
         </div>
     </div>
+
     <div class="container">
         <div class="row">
                 <div class="list-group">
                     <div class="col-md-6">
-                        <li class="list-group-item list-group-item-success">APROVADO    <a class="btn btn-primary" href="#">Editar</a></li>
+                        <li class="list-group-item list-group-item-success">APROVADO<a class="btn btn-primary text-right" href="#">Editar</a></li>
                         <li class="list-group-item list-group-item-warning">PENDENTE</li>
                         <li class="list-group-item list-group-item-danger">REPROVADO</li>
                     </div>
@@ -71,6 +80,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>
