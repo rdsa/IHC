@@ -8,26 +8,18 @@
     margin-right: auto;
     padding: 1%;
 }
-
-.nome{
-
-}
-
 .info{
-    font-size: 20px;
+    font-size: 125%;
 }
-
 .login{
     height: auto;
     width: auto;
     max-width: 300px;
     max-height: 300px;
 }
-
 * {
     font-family: 'Roboto', sans-serif;
 }
-
 .panel-heading a:after {
     font-family:'Glyphicons Halflings';
     content:"\e114";

@@ -4,9 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title>DEPEX</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- UTFPR Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.utfpr.edu.br/favicon.ico" />
     <!-- Roboto-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="main.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
@@ -17,54 +21,85 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-id" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="main1.html">DEPEX</a>
+                <a class="navbar-brand" href="home1.html">DEPEX</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="navbar-id">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="main1.html">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li class="active"><a href="home1.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
                 </ul>
 
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
     <div class="container">
-        <img class="logo" src="https://yt3.ggpht.com/-I6xMA4mjCcE/AAAAAAAAAAI/AAAAAAAAAAA/JIFCpRrMCuA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg"/>
-    </div>
-    <hr />
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <ul class="list-group">
-                    <li class="list-group-item active"><h2>O que faz o DEPEX?</h2></li>
-                    <li class="list-group-item info">Registro de ações de extensão</li>
-                    <li class="list-group-item info">Emissão de declarações de participação aos professores coordenadores</li>
-                    <li class="list-group-item info">Fomento à extensão no câmpus</li>
-                    <li class="list-group-item info">Divulgação de editais e projetos</li>
-                    <li class="list-group-item info">Gerenciamento dos proessos de editais e alunos bolsistas</li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <ul class="list-group">
-                    <li class="list-group-item active"><h2>O que é Extensão?</h2></li>
-                    <li class="list-group-item info text-justify">"A Extensão Universitária, sob o princípio constitucional da indissociabilidade entre ensino, pesquisa e extensão, é um processo interdisciplinar, educativo, cultural, científico e político que promove a interação transformadora entre Universidade e outros setores da sociedade."
-                        <br />(Plano Nacional de Extensão, 2012)</li>
-
-                </ul>
+            <div class="modal fade" id="login-modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2>Login</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container login">
+                                <form class="form-signin">
+                                    <input type="email" id="inputEmail" class="form-control" placeholder="Usuário" required autofocus>
+                                    <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+                                    <div class="btn btn-lg btn-block">
+                                        <a class="btn btn-lg btn-primary btn-block" href="home2.html">Login</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <div class="container">
+            <img class="logo" src="https://yt3.ggpht.com/-I6xMA4mjCcE/AAAAAAAAAAI/AAAAAAAAAAA/JIFCpRrMCuA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="logo"/>
+        </div>
+
+        <hr />
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item active"><h2>O que faz o DEPEX?</h2></li>
+                        <li class="list-group-item info">Registro de ações de extensão</li>
+                        <li class="list-group-item info">Emissão de declarações de participação aos professores coordenadores</li>
+                        <li class="list-group-item info">Fomento à extensão no câmpus</li>
+                        <li class="list-group-item info">Divulgação de editais e projetos</li>
+                        <li class="list-group-item info">Gerenciamento dos proessos de editais e alunos bolsistas</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item active"><h2>O que é Extensão?</h2></li>
+                        <li class="list-group-item">
+                            <p class="info text-justify">
+                                "A Extensão Universitária, sob o princípio constitucional da indissociabilidade entre ensino, pesquisa e extensão, é um processo interdisciplinar, educativo, cultural, científico e político que promove a interação transformadora entre Universidade e outros setores da sociedade."
+                                <br /><br /><br /><br />(Plano Nacional de Extensão, 2012)
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
     </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/
-    bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
