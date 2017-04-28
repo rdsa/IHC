@@ -9,8 +9,12 @@
     padding: 1%;
 }
 
+.nome{
+
+}
+
 .info{
-    font-size: 125%;
+    font-size: 20px;
 }
 
 .login{
