@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>DEPEX</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- UTFPR Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.utfpr.edu.br/favicon.ico" />
+    <!-- Roboto-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-id" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home2.html">DEPEX</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-id">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><p class="navbar-text">Olá, Joãozinho</p></li>
+                    <li><a href="depex.html">Home</a></li>
+                    <li><a href="projetosdepex.html">Ver Projetos</a></li>
+                    <li><a href="data.html">Indicadores</a></li>
+                    <li class="active"><a>Avaliação de Projeto</a></li>
+                    <li><a href="home1.html">Sair</a></li>
+                </ul>
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        <img class="logo" src="https://yt3.ggpht.com/-I6xMA4mjCcE/AAAAAAAAAAI/AAAAAAAAAAA/JIFCpRrMCuA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="logo"/>
+    </div>
+    <hr />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8">
+                <form>
+                    <div class="form-group">
+                        <label>Campus</label>
+                        <select class="form-control" name="campus" id="campus" required >
+                            <option value="CURITIBA">CURITIBA</option>
+                            <option value="APUCARANA">APUCARANA</option>
+                            <option value="CAMPO MOURÃO">CAMPO MOURÃO</option>
+                            <option value="CORNÉLIO PROCÓPIO">CORNÉLIO PROCÓPIO</option>
+                            <option value="DOIS VIZINHOS">DOIS VIZINHOS</option>
+                            <option value="FRANCISCO BELTRÃO">FRANCISCO BELTRÃO</option>
+                            <option value="GUARAPUAVA">GUARAPUAVA</option>
+                            <option value="LONDRINA">LONDRINA</option>
+                            <option value="MEDIANEIRA">MEDIANEIRA</option>
+                            <option value="PATO BRANCO">PATO BRANCO</option>
+                            <option value="PONTA GROSSA">PONTA GROSSA</option>
+                            <option value="SANTA HELENA">SANTA HELENA</option>
+                            <option value="TOLEDO">TOLEDO</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Departamento</label>
+                        <select class="form-control" name="campus" id="campus" required >
+                            <option value="departamento 1">DAINF</option>
+                            <option value="departamento 2">departamento 2</option>
+                            <option value="departamento 3">departamento 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Curso</label>
+                        <select class="form-control" name="campus" id="campus" required >
+                            <option value="curso 1">BSI</option>
+                            <option value="curso 2">curso 2</option>
+                            <option value="curso 3">curso 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Setor</label>
+                        <select class="form-control" name="campus" id="campus" required >
+                            <option value="setor 1">Setor</option>
+                            <option value="setor 2">setor 2</option>
+                            <option value="setor 3">setor 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Status da Atividade</label>
+                        <select class="form-control" name="campus" id="campus" required >
+                            <option value="PROPOSTA">Proposta</option>
+                            <option value="EM ANDAMENTO">EM ANDAMENTO</option>
+                            <option value="CONCLUÍDA">CONCLUÍDA</option>
+                        </select>
+                    </div>
+                    <p>
+                        <a href="http://www.utfpr.edu.br/estrutura-universitaria/pro-reitorias/prorec/diretoria-de-extensao/acoes-de-extensao-1/modalidades-de-extensao">Definições sobre Ações de Extensão</a>
+                    </p>
+                    <div class="form-group">
+                        <label>MODALIDADE</label><br>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" required > Programa (mínimo de 4 anos de duração, composto no mínimo por 2 Projetos)
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" checked="true" > Projeto (mínimo de 12 meses de duração)
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" > Evento (palestra/seminário/exposição/semana acadêmica/Feira/ Campeonato/Oficina etc...)
+                            </label>
+                        </div>
+                    </div>
+                    <section class="subset">
+                        <h5>INFORMAÇÕES SOBRE A AÇÃO</h5>
+                        <div class="form-group">
+                            <label>TÍTULO DA ATIVIDADE</label>
+                            <input type="text" class="form-control" required value="Título">
+                        </div>
+                        <div class="form-group">
+                            <label>Informe o nome do Programa de Extensão caso a ação faça parte de um. </label>
+                            <input type="text" class="form-control" value="Nome do Programa" >
+                        </div>
+                        <div class="form-group">
+                            <label>OBJETIVO GERAL DA AÇÃO</label>
+                            <textarea class="form-control" required >Objetivo</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>COORDENAÇÃO DA AÇÃO DE EXTENSÃO</label>
+                            <input type="text" class="form-control" required value="Coordenador" >
+                        </div>
+                        <div class="form-group">
+                            <label>CPF</label>
+                            <input type="text" class="form-control" required value="12345678910" >
+                        </div>
+                        <div class="form-group">
+                            <label>VÍNCULO PROFISSIONAL - UTFPR</label>
+                            <select class="form-control" required >
+                                <option value="DOCENTE">DOCENTE</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>TELEFONE</label>
+                            <input type="text" class="form-control" required value="4130303030" >
+                        </div>
+                        <div class="form-group">
+                            <label>E-MAIL</label>
+                            <input type="text" class="form-control" required value="email@email.com" >
+                        </div>
+                        <div class="form-group">
+                            <label>PERÍODO DE EXECUÇÃO - INÍCIO/FIM</label>
+                            <div class="form-inline">
+                                <input type="date" class="form-control" required value="01/01/2018" >
+                                <input type="date" class="form-control" required value="01/01/2019" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>CARGA HORÁRIA TOTAL</label>
+                            <input type="text" class="form-control" required value="400h" >
+                        </div>
+                        <div class="form-group">
+                            <label>ÁREA TEMÁTICA</label>
+                            <select class="form-control" name="area-tematica" id="area-tematica" >
+                                <option value="Educação">Educação</option>
+                            </select>
+                        </div>
+                    </section>
+                    <section class="subset">
+                        <h5>DESENVOLVIMENTO SUSTENTÁVEL </h5>
+                                            <p><a href="https://nacoesunidas.org/conheca-os-novos-17-objetivos-de-desenvolvimento-sustentavel-da-onu/">Maiores informações sobre os Objetivos de Desenvolvimento Sustentável - ONU</a></p>
+                        <div class="form-group check">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" >
+                                    1- ERRADICAÇÃO DA POBREZA
+                                </label>
+                            </div>
+                            <div class="checkbox" >
+                                <label>
+                                    <input type="checkbox" >
+                                    2- FOME ZERO E AGRICULTURA SUSTENTÁVEL
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" >
+                                    3- SAÚDE E BEM-ESTAR
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" checked="true" >
+                                    4- EDUCAÇÃO E QUALIDADE
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" checked="true" >
+                                    5- IGUALDADE DE GÊNERO
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" >
+                                    6- ÁGUA POTÁVEL E SANEAMENTO
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" >
+                                    7- ENERGIA ACESSÍVEL E LIMPA
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" >
+                                    8- TRABALHO DECENTE E CRESCIMENTO ECONÔMICO
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" >
+                                    9- INDÚSTRIA, INOVAÇÃO E INFRAESTRUTURA
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" checked="true" >
+                                    10- REDUÇÃO DAS DESIGUALDADES
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" >
+                                    11- CIDADES E COMUNIDADES SUSTENTÁVEIS
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" >
+                                    12- CONSUMO E PRODUÇÃO RESPONSÁVEIS
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" >
+                                    13- AÇÃO CONTRA MUDANÇA GLOBAL DO CLIMA
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" >
+                                    14- VIDA NA ÁGUA
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" >
+                                    15- VIDA TERRESTRE
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" >
+                                    16- PAZ, JUSTIÇA E INSTITUIÇÕES EFICAZES
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" >
+                                    17- PARCERIA E MEIOS DE IMPLEMENTAÇÃO
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="subset">
+                        <h5>CARACTERIZAÇÃO DO PÚBLICO ALVO</h5>
+                        <div class="form-group">
+                            <label>QUANTIDADE DE PÚBLICO A SER ATENDIDO PELA AÇÃO</label>
+                            <input type="number" class="form-control" min="0" max="50" value="50" >
+                        </div>
+                        <div class="form-group">
+                            <label>CARACTERIZAÇÃO</label>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"  checked="true">MASCULINO
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"  checked="true">FEMININO
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"  checked="true">OUTRO
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>PÚBLICO ALVO</label>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="" >CRIANÇA (ATÉ 11 ANOS)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name=""  checked="true">ADOLESCENTE (DE 12 À 18 ANOS)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name=""  checked="true">ADULTOS (DE 19 À 59 ANOS)
+                                </label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="" >IDOSO (ACIMA DE 60 ANOS)
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="equipe-executora" class="subset">
+                        <h5>EQUIPE EXECUTORA</h5>
+                        <div class="form-group">
+                            <label>QUANTIDADE DE DOCENTES</label>
+                            <input type="number" class="form-control" min="0" value="1" >
+                        </div>
+                        <div>
+                            <label>QUANTIDADE DE TÉCNICOS ADMINISTRATIVOS</label>
+                            <input type="number" class="form-control" min="0" >
+                        </div>
+                        <div>
+                            <label>QUANTIDADE DE VOLUNTÁRIOS</label>
+                            <input type="number" class="form-control" min="0" >
+                        </div>
+                        <div>
+                            <label>QUANTIDADE DE ESTUDANTES - UTFPR</label>
+                            <input type="number" class="form-control" min="0" >
+                        </div>
+                        <div>
+                            <label>QUANTIDADE DE ESTUDANTES - OUTRAS INSTITUIÇÕES</label>
+                            <input type="number" class="form-control" min="0" >
+                        </div>
+                        <div>
+                            <label>QUANTIDADE DE BOLSISTAS - PROREC</label>
+                            <input type="number" class="form-control" min="0" >
+                        </div>
+                        <div>
+                            <label>QUANTIDADE DE BOLSISTAS - FA PIBEX</label>
+                            <input type="number" class="form-control" min="0" >
+                        </div>
+                        <div>
+                            <label>QUANTIDADE DE BOLSISTAS - FA PIBIS</label>
+                            <input type="number" class="form-control" min="0" >
+                        </div>
+                        <div>
+                            <label>QUANTIDADE DE BOLSISTAS - PET</label>
+                            <input type="number" class="form-control" min="0" >
+                        </div>
+                    </section>
+                    <section class="subset">
+                        <h5>INFORMAÇÕES DA EQUIPE</h5>
+                        <div id=equipe-info>
+                            <label>MEMBRO 1</label>
+                            <div class='form-group'>
+                                <label>NOME COMPLETO</label>
+                                <input type='text' class='form-control' value="Nome Completo 1" >
+                            </div>
+                            <div class='form-group'>
+                                <label>CPF</label>
+                                <input type='text' class='form-control' value="12345678910" >
+                            </div>
+                            <div class='form-group'>
+                                <label>CARGA HORÁRIA SEMANAL</label>
+                                <input type='time' class='form-control' value="20h" >
+                            </div>
+                            <div class='form-group'>
+                                <label>E-MAIL</label>
+                                <input type='text' class='form-control' value="email@email.com" >
+                            </div>
+                            <div class='form-group'>
+                                <label>FUNÇÃO</label>
+                                <input type='text' class='form-control' value="Função" >
+                            </div><hr>
+                        </div>
+                    </section>
+                    <section class="subset">
+                        <h5>INFORMAÇÕES SOBRE PARCERIAS</h5>
+                        <div class="form-group">
+                            <label>NOME DA ORGANIZAÇÃO/EMPRESA/DEPTO - CONTRAPARTIDA OFERECIDA/FOMENTO</label>
+                            <textarea class="form-control" >Nome aqui</textarea>
+                        </div>
+                    </section>
+                    <div class="form-group">
+                        <label>PROJETO OU PROGRAMA - Enviar o arquivo em PDF </label>
+                        <input type="file">
+                        <p class="help-block">O nome do arquivo deve conter a seguinte informação: Campus_NomedoCoordenador_NumerodoProjetoAno Ex: CT_Christian_012017 OBS: O máximo do arquivo é de 5 MB</p>
+                    </div>
+                    <div class="signature">
+                        <input value="Assinatura Digital" >
+                        <h5>COORDENAÇÃO DA AÇÃO</h5>
+                    </div>
+
+                    <a id="new-project-button" href="projetos.html" class="btn btn-success">Confirmar</a>
+                    <a id="new-project-button" href="projetos.html" class="btn btn-default pull-right">Voltar</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <hr>
+        <h5>© UTFPR</h5>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -66,9 +66,14 @@ footer hr {
     border-color: #808080;
 }
 
-.signature hr {
-    width: 400px;
-    border-color: #000;
+.signature input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .signature {

@@ -47,34 +47,90 @@
     </div>
     <hr />
     <div class="container">
-        <div class="row">
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th>Código</th> <th>Nome do projeto</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td> <td><a href="#">Projeto 1</a></td>
-                    </tr>
-                    <tr>
-                        <td>2</td> <td><a href="#">Projeto 2</a></td>
-                    </tr>
-                    <tr>
-                        <td>3</td> <td><a href="#">Projeto 3</a></td>
-                    </tr>
-                    <tr>
-                        <td>4</td> <td><a href="#">Projeto 4</a></td>
-                    </tr>
-                    <tr>
-                        <td>5</td> <td><a href="#">Projeto 5</a></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-target="#proj-aprov">Projetos Aprovados</a>
+                    </h4>
+                </div>
+                <div id="proj-aprov" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="row">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Código</th> <th>Nome do projeto</th> <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td> <td><a href="#">Projeto 1</a></td> <td><a class="btn btn-default btn-xs pull-right" href="#">Relatório</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td> <td><a href="#">Projeto 2</a></td> <td><a class="btn btn-default btn-xs pull-right" href="#">Relatório</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td> <td><a href="#">Projeto 3</a></td> <td><a class="btn btn-default btn-xs pull-right" href="#">Relatório</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td> <td><a href="#">Projeto 4</a></td> <td><a class="btn btn-default btn-xs pull-right" href="#">Relatório</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td> <td><a href="#">Projeto 5</a></td> <td><a class="btn btn-default btn-xs pull-right" href="#">Relatório</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-target="#proj-pend">Projetos Pendentes</a>
+                    </h4>
+                </div>
+                <div id="proj-pend" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="row">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Código</th> <th>Nome do projeto</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td> <td><a href="analise-depex.html">Projeto 1</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td> <td><a href="#">Projeto 2</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td> <td><a href="#">Projeto 3</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td> <td><a href="#">Projeto 4</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td> <td><a href="#">Projeto 5</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <footer>
+        <hr>
+        <h5>© UTFPR</h5>
+    </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
