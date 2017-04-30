@@ -33,8 +33,9 @@
             <div class="collapse navbar-collapse" id="navbar-id">
                 <ul class="nav navbar-nav navbar-right">
                     <li><p class="navbar-text">Olá, Joãozinho</p></li>
-                    <li><a href="home2.html">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="home2.html">Home</a></li>
                     <li class="active"><a href="projetos.html">Ver Projetos<span class="sr-only">(current)</span></a></li>
+                    <li><a href="projeto-novo.html">Novo Projeto</a></li>
                     <li><a href="home1.html">Sair</a></li>
                 </ul>
 
@@ -45,8 +46,43 @@
         <img class="logo" src="https://yt3.ggpht.com/-I6xMA4mjCcE/AAAAAAAAAAI/AAAAAAAAAAA/JIFCpRrMCuA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg"/>
     </div>
     <hr />
+
     <div class="container">
         <div class="row">
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <button class="btn btn-default btn-block" data-toggle="collapse" data-target="#users">Projetos (isso vai na tela de ver andamento dos projetos)</button>
+                    </h4>
+                </div>
+                <div id="users" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-success">NOME</li>
+                            <li class="list-group-item list-group-item-warning">NOME
+                                <a href="#" class="badge">Editar</a>
+                            </li>
+                            <li class="list-group-item list-group-item-danger">NOME</li>
+                        </ul>
+                    </div>
+                    <div class="panel-footer">
+                        <h4>Legenda</h4>
+                        <div class="row">
+                            <p class="bg-success info col-md-4">
+                                Projeto Aprovado
+                            </p>
+                            <p class="bg-warning info col-md-4">
+                                Projeto Aguardando Aprovação
+                            </p>
+                            <p class="bg-danger info col-md-4">
+                                Projeto Reprovado
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
             <table class="table table-hover">
                 <thead>
                     <tr>
@@ -63,19 +99,19 @@
                         <td>APROVADO</td>
                         <td></td>
                     </tr>
-                    <tr>
+                    <tr class="warning">
                         <td>2</td>
                         <td>Projeto 2</td>
                         <td>PENDENTE</td>
                         <td><a class="btn btn-default btn-xs pull-right" href="projetos-2-edit.html">Editar</a></td>
                     </tr>
-                    <tr>
+                    <tr class="warning">
                         <td>3</td>
                         <td>Projeto 3</td>
                         <td>PENDENTE</td>
                         <td><a class="btn btn-default btn-xs pull-right" href="#">Editar</a></td>
                     </tr>
-                    <tr>
+                    <tr class="warning">
                         <td>4</td>
                         <td>Projeto 4</td>
                         <td>PENDENTE</td>
@@ -92,7 +128,11 @@
         </div>
 
     </div>
-
+    
+    <footer>
+        <hr>
+        <h3>© UTFPR CORP </h3>
+    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
