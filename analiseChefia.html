@@ -28,25 +28,24 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home2.html">DEPEX</a>
+                <a class="navbar-brand" href="homeChefia.html">DEPEX</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-id">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><p class="navbar-text">Olá, Joãozinho</p></li>
-                    <li><a href="home2.html">Home</a></li>
-                    <li class="active"><a href="projetos.html">Ver Projetos</a></li>
-                    <li><a href="projeto-novo.html">Novo Projeto</a></li>
+                    <li><p class="navbar-text">Olá, Coordenador</p></li>
+                    <li><a href="homeChefia.html">Home</a></li>
+                    <li class="active"><a href="projetosChefia.html">Ver Projetos</a></li>
+                    <li><a href="projetoNovoChefia.html">Novo Projeto</a></li>
                     <li><a href="home1.html">Sair</a></li>
                 </ul>
+
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-
     <div class="container">
         <img class="logo" src="https://yt3.ggpht.com/-I6xMA4mjCcE/AAAAAAAAAAI/AAAAAAAAAAA/JIFCpRrMCuA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="logo"/>
     </div>
-    
     <hr />
     <div class="container">
         <div class="row">
@@ -54,72 +53,49 @@
                 <form>
                     <div class="form-group">
                         <label>Campus</label>
-                        <select class="form-control" name="campus" id="campus" required >
+                        <select class="form-control" name="campus" id="campus" required disabled>
                             <option value="CURITIBA">CURITIBA</option>
-                            <option value="APUCARANA">APUCARANA</option>
-                            <option value="CAMPO MOURÃO">CAMPO MOURÃO</option>
-                            <option value="CORNÉLIO PROCÓPIO">CORNÉLIO PROCÓPIO</option>
-                            <option value="DOIS VIZINHOS">DOIS VIZINHOS</option>
-                            <option value="FRANCISCO BELTRÃO">FRANCISCO BELTRÃO</option>
-                            <option value="GUARAPUAVA">GUARAPUAVA</option>
-                            <option value="LONDRINA">LONDRINA</option>
-                            <option value="MEDIANEIRA">MEDIANEIRA</option>
-                            <option value="PATO BRANCO">PATO BRANCO</option>
-                            <option value="PONTA GROSSA">PONTA GROSSA</option>
-                            <option value="SANTA HELENA">SANTA HELENA</option>
-                            <option value="TOLEDO">TOLEDO</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label>Departamento</label>
-                        <select class="form-control" name="campus" id="campus" required >
+                        <select class="form-control" name="campus" id="campus" required disabled>
                             <option value="departamento 1">DAINF</option>
-                            <option value="departamento 2">departamento 2</option>
-                            <option value="departamento 3">departamento 3</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label>Curso</label>
-                        <select class="form-control" name="campus" id="campus" required >
+                        <select class="form-control" name="campus" id="campus" required disabled>
                             <option value="curso 1">BSI</option>
-                            <option value="curso 2">curso 2</option>
-                            <option value="curso 3">curso 3</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label>Setor</label>
-                        <select class="form-control" name="campus" id="campus" required >
+                        <select class="form-control" name="campus" id="campus" required disabled>
                             <option value="setor 1">Setor</option>
-                            <option value="setor 2">setor 2</option>
-                            <option value="setor 3">setor 3</option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label>Status da Atividade</label>
-                        <select class="form-control" name="campus" id="campus" required >
+                        <select class="form-control" name="campus" id="campus" required disabled>
                             <option value="PROPOSTA">Proposta</option>
-                            <option value="EM ANDAMENTO">EM ANDAMENTO</option>
-                            <option value="CONCLUÍDA">CONCLUÍDA</option>
                         </select>
                     </div>
-                    <p>
-                        <a href="http://www.utfpr.edu.br/estrutura-universitaria/pro-reitorias/prorec/diretoria-de-extensao/acoes-de-extensao-1/modalidades-de-extensao">Definições sobre Ações de Extensão</a>
-                    </p>
                     <div class="form-group">
                         <label>MODALIDADE</label><br>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="optionsRadios" required > Programa (mínimo de 4 anos de duração, composto no mínimo por 2 Projetos)
+                                <input type="radio" name="optionsRadios" required disabled> Programa (mínimo de 4 anos de duração, composto no mínimo por 2 Projetos)
                             </label>
                         </div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="optionsRadios" checked="true" > Projeto (mínimo de 12 meses de duração)
+                                <input type="radio" name="optionsRadios" checked="true" disabled> Projeto (mínimo de 12 meses de duração)
                             </label>
                         </div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="optionsRadios" > Evento (palestra/seminário/exposição/semana acadêmica/Feira/ Campeonato/Oficina etc...)
+                                <input type="radio" name="optionsRadios" disabled> Evento (palestra/seminário/exposição/semana acadêmica/Feira/ Campeonato/Oficina etc...)
                             </label>
                         </div>
                     </div>
@@ -127,159 +103,158 @@
                         <h5>INFORMAÇÕES SOBRE A AÇÃO</h5>
                         <div class="form-group">
                             <label>TÍTULO DA ATIVIDADE</label>
-                            <input type="text" class="form-control" required value="Título">
+                            <input type="text" class="form-control" required value="Título" disabled>
                         </div>
                         <div class="form-group">
-                            <label>Informe o nome do Programa de Extensão caso a ação faça parte de um. </label>
-                            <input type="text" class="form-control" value="Nome do Programa" >
+                            <label>Nome do Programa de Extensão</label>
+                            <input type="text" class="form-control" value="Nome do Programa" disabled>
                         </div>
                         <div class="form-group">
                             <label>OBJETIVO GERAL DA AÇÃO</label>
-                            <textarea class="form-control" required >Objetivo</textarea>
+                            <textarea class="form-control" required disabled>Objetivo</textarea>
                         </div>
                         <div class="form-group">
                             <label>COORDENAÇÃO DA AÇÃO DE EXTENSÃO</label>
-                            <input type="text" class="form-control" required value="Coordenador" >
+                            <input type="text" class="form-control" required value="Coordenador" disabled>
                         </div>
                         <div class="form-group">
                             <label>CPF</label>
-                            <input type="text" class="form-control" required value="12345678910" >
+                            <input type="text" class="form-control" required value="12345678910" disabled>
                         </div>
                         <div class="form-group">
                             <label>VÍNCULO PROFISSIONAL - UTFPR</label>
-                            <select class="form-control" required >
+                            <select class="form-control" required disabled>
                                 <option value="DOCENTE">DOCENTE</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label>TELEFONE</label>
-                            <input type="text" class="form-control" required value="4130303030" >
+                            <input type="text" class="form-control" required value="4130303030" disabled>
                         </div>
                         <div class="form-group">
                             <label>E-MAIL</label>
-                            <input type="text" class="form-control" required value="email@email.com" >
+                            <input type="text" class="form-control" required value="email@email.com" disabled>
                         </div>
                         <div class="form-group">
                             <label>PERÍODO DE EXECUÇÃO - INÍCIO/FIM</label>
                             <div class="form-inline">
-                                <input type="date" class="form-control" required value="01/01/2018" >
-                                <input type="date" class="form-control" required value="01/01/2019" >
+                                <input type="date" class="form-control" required value="01/01/2018" disabled>
+                                <input type="date" class="form-control" required value="01/01/2019" disabled>
                             </div>
                         </div>
                         <div class="form-group">
                             <label>CARGA HORÁRIA TOTAL</label>
-                            <input type="text" class="form-control" required value="400h" >
+                            <input type="text" class="form-control" required value="400h" disabled>
                         </div>
                         <div class="form-group">
                             <label>ÁREA TEMÁTICA</label>
-                            <select class="form-control" name="area-tematica" id="area-tematica" >
+                            <select class="form-control" name="area-tematica" id="area-tematica" disabled>
                                 <option value="Educação">Educação</option>
                             </select>
                         </div>
                     </section>
                     <section class="subset">
                         <h5>DESENVOLVIMENTO SUSTENTÁVEL </h5>
-                                            <p><a href="https://nacoesunidas.org/conheca-os-novos-17-objetivos-de-desenvolvimento-sustentavel-da-onu/">Maiores informações sobre os Objetivos de Desenvolvimento Sustentável - ONU</a></p>
                         <div class="form-group check">
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" >
+                                    <input type="checkbox" disabled>
                                     1- ERRADICAÇÃO DA POBREZA
                                 </label>
                             </div>
-                            <div class="checkbox" >
+                            <div class="checkbox" disabled>
                                 <label>
-                                    <input type="checkbox" >
+                                    <input type="checkbox" disabled>
                                     2- FOME ZERO E AGRICULTURA SUSTENTÁVEL
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" >
+                                    <input type="checkbox" disabled>
                                     3- SAÚDE E BEM-ESTAR
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" checked="true" >
+                                    <input type="checkbox" checked="true" disabled>
                                     4- EDUCAÇÃO E QUALIDADE
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" checked="true" >
+                                    <input type="checkbox" checked="true" disabled>
                                     5- IGUALDADE DE GÊNERO
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" >
+                                    <input type="checkbox" disabled>
                                     6- ÁGUA POTÁVEL E SANEAMENTO
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" >
+                                    <input type="checkbox" disabled>
                                     7- ENERGIA ACESSÍVEL E LIMPA
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" >
+                                    <input type="checkbox" disabled>
                                     8- TRABALHO DECENTE E CRESCIMENTO ECONÔMICO
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" >
+                                    <input type="checkbox" disabled>
                                     9- INDÚSTRIA, INOVAÇÃO E INFRAESTRUTURA
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" checked="true" >
+                                    <input type="checkbox" checked="true" disabled>
                                     10- REDUÇÃO DAS DESIGUALDADES
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" >
+                                    <input type="checkbox" disabled>
                                     11- CIDADES E COMUNIDADES SUSTENTÁVEIS
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" >
+                                    <input type="checkbox" disabled>
                                     12- CONSUMO E PRODUÇÃO RESPONSÁVEIS
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" >
+                                    <input type="checkbox" disabled>
                                     13- AÇÃO CONTRA MUDANÇA GLOBAL DO CLIMA
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" >
+                                    <input type="checkbox" disabled>
                                     14- VIDA NA ÁGUA
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" >
+                                    <input type="checkbox" disabled>
                                     15- VIDA TERRESTRE
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" >
+                                    <input type="checkbox" disabled>
                                     16- PAZ, JUSTIÇA E INSTITUIÇÕES EFICAZES
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" >
+                                    <input type="checkbox" disabled>
                                     17- PARCERIA E MEIOS DE IMPLEMENTAÇÃO
                                 </label>
                             </div>
@@ -289,23 +264,23 @@
                         <h5>CARACTERIZAÇÃO DO PÚBLICO ALVO</h5>
                         <div class="form-group">
                             <label>QUANTIDADE DE PÚBLICO A SER ATENDIDO PELA AÇÃO</label>
-                            <input type="number" class="form-control" min="0" max="50" value="50" >
+                            <input type="number" class="form-control" min="0" max="50" value="50" disabled>
                         </div>
                         <div class="form-group">
                             <label>CARACTERIZAÇÃO</label>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox"  checked="true">MASCULINO
+                                    <input type="checkbox" disabled checked="true">MASCULINO
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox"  checked="true">FEMININO
+                                    <input type="checkbox" disabled checked="true">FEMININO
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox"  checked="true">OUTRO
+                                    <input type="checkbox" disabled checked="true">OUTRO
                                 </label>
                             </div>
                         </div>
@@ -313,22 +288,22 @@
                             <label>PÚBLICO ALVO</label>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" name="" >CRIANÇA (ATÉ 11 ANOS)
+                                    <input type="checkbox" name="" disabled>CRIANÇA (ATÉ 11 ANOS)
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" name=""  checked="true">ADOLESCENTE (DE 12 À 18 ANOS)
+                                    <input type="checkbox" name="" disabled checked="true">ADOLESCENTE (DE 12 À 18 ANOS)
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" name=""  checked="true">ADULTOS (DE 19 À 59 ANOS)
+                                    <input type="checkbox" name="" disabled checked="true">ADULTOS (DE 19 À 59 ANOS)
                                 </label>
                             </div>
                             <div class="checkbox">
                                 <label>
-                                    <input type="checkbox" name="" >IDOSO (ACIMA DE 60 ANOS)
+                                    <input type="checkbox" name="" disabled>IDOSO (ACIMA DE 60 ANOS)
                                 </label>
                             </div>
                         </div>
@@ -337,39 +312,39 @@
                         <h5>EQUIPE EXECUTORA</h5>
                         <div class="form-group">
                             <label>QUANTIDADE DE DOCENTES</label>
-                            <input type="number" class="form-control" min="0" value="1" >
+                            <input type="number" class="form-control" min="0" value="1" disabled>
                         </div>
                         <div>
                             <label>QUANTIDADE DE TÉCNICOS ADMINISTRATIVOS</label>
-                            <input type="number" class="form-control" min="0" >
+                            <input type="number" class="form-control" min="0" disabled>
                         </div>
                         <div>
                             <label>QUANTIDADE DE VOLUNTÁRIOS</label>
-                            <input type="number" class="form-control" min="0" >
+                            <input type="number" class="form-control" min="0" disabled>
                         </div>
                         <div>
                             <label>QUANTIDADE DE ESTUDANTES - UTFPR</label>
-                            <input type="number" class="form-control" min="0" >
+                            <input type="number" class="form-control" min="0" disabled>
                         </div>
                         <div>
                             <label>QUANTIDADE DE ESTUDANTES - OUTRAS INSTITUIÇÕES</label>
-                            <input type="number" class="form-control" min="0" >
+                            <input type="number" class="form-control" min="0" disabled>
                         </div>
                         <div>
                             <label>QUANTIDADE DE BOLSISTAS - PROREC</label>
-                            <input type="number" class="form-control" min="0" >
+                            <input type="number" class="form-control" min="0" disabled>
                         </div>
                         <div>
                             <label>QUANTIDADE DE BOLSISTAS - FA PIBEX</label>
-                            <input type="number" class="form-control" min="0" >
+                            <input type="number" class="form-control" min="0" disabled>
                         </div>
                         <div>
                             <label>QUANTIDADE DE BOLSISTAS - FA PIBIS</label>
-                            <input type="number" class="form-control" min="0" >
+                            <input type="number" class="form-control" min="0" disabled>
                         </div>
                         <div>
                             <label>QUANTIDADE DE BOLSISTAS - PET</label>
-                            <input type="number" class="form-control" min="0" >
+                            <input type="number" class="form-control" min="0" disabled>
                         </div>
                     </section>
                     <section class="subset">
@@ -378,23 +353,23 @@
                             <label>MEMBRO 1</label>
                             <div class='form-group'>
                                 <label>NOME COMPLETO</label>
-                                <input type='text' class='form-control' value="Nome Completo 1" >
+                                <input type='text' class='form-control' value="Nome Completo 1" disabled>
                             </div>
                             <div class='form-group'>
                                 <label>CPF</label>
-                                <input type='text' class='form-control' value="12345678910" >
+                                <input type='text' class='form-control' value="12345678910" disabled>
                             </div>
                             <div class='form-group'>
                                 <label>CARGA HORÁRIA SEMANAL</label>
-                                <input type='time' class='form-control' value="20h" >
+                                <input type='time' class='form-control' value="20h" disabled>
                             </div>
                             <div class='form-group'>
                                 <label>E-MAIL</label>
-                                <input type='text' class='form-control' value="email@email.com" >
+                                <input type='text' class='form-control' value="email@email.com" disabled>
                             </div>
                             <div class='form-group'>
                                 <label>FUNÇÃO</label>
-                                <input type='text' class='form-control' value="Função" >
+                                <input type='text' class='form-control' value="Função" disabled>
                             </div><hr>
                         </div>
                     </section>
@@ -402,21 +377,44 @@
                         <h5>INFORMAÇÕES SOBRE PARCERIAS</h5>
                         <div class="form-group">
                             <label>NOME DA ORGANIZAÇÃO/EMPRESA/DEPTO - CONTRAPARTIDA OFERECIDA/FOMENTO</label>
-                            <textarea class="form-control" >Nome aqui</textarea>
+                            <textarea class="form-control" disabled>Nome aqui</textarea>
                         </div>
                     </section>
                     <div class="form-group">
-                        <label>PROJETO OU PROGRAMA - Enviar o arquivo em PDF </label>
-                        <input type="file">
-                        <p class="help-block">O nome do arquivo deve conter a seguinte informação: Campus_NomedoCoordenador_NumerodoProjetoAno Ex: CT_Christian_012017 OBS: O máximo do arquivo é de 5 MB</p>
+                        <label>PROJETO OU PROGRAMA</label>
+                        <form method="get" action="file.pdf">
+                            <br />
+                            <button type="submit">Download</button>
+                        </form>
                     </div>
                     <div class="signature">
-                        <input value="Assinatura Digital" >
+                        <input value="Assinatura Digital" disabled>
                         <h5>COORDENAÇÃO DA AÇÃO</h5>
                     </div>
 
-                    <a id="new-project-button" href="projetos.html" class="btn btn-success">Confirmar</a>
-                    <a id="new-project-button" href="projetos.html" class="btn btn-default pull-right">Voltar</a>
+                    <section class="subset">
+                        <h5>CHEFIA</h5>
+                        <div class="form-group">
+                            <label>PARECER DA CHEFIA IMEDIATA</label>
+                            <textarea class="form-control" disabled>Parecer Chefia Imediata</textarea>
+                            <div class="signature">
+                                <input value="Assinatura Chefia" disabled>
+                                <h4>COORDENAÇÃO/CHEFIA IMEDIATA</h4>
+                            </div>
+                            <label>PARECER DEPEX</label>
+                            <textarea class="form-control"></textarea>
+                            <div class="signature">
+                                <input>
+                                <h5>DEPEX</h5>
+                            </div>
+                            <div class="signature">
+                                <input>
+                                <h5>DIREC</h5>
+                            </div>
+                        </div>
+                    </section>
+                    <a id="new-project-button" href="projetosChefia.html" class="btn btn-success">Aceitar</a>
+                    <a id="new-project-button" href="projetosChefia.html" class="btn btn-danger pull-right">Rejeitar</a>
                 </form>
             </div>
         </div>
