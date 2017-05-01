@@ -9,10 +9,12 @@ $(document).ready(function(){
 
 
 	var membros = 0;
+	var total = 0;
 
+	/*
 	$('#equipe-executora input').on('change', function(evt) {
 		var temp = parseInt($(this).val());
-		
+
 
 
 		for( i = membros; i < temp + membros ; i++ ){
@@ -41,5 +43,48 @@ $(document).ready(function(){
 		};
 		membros += temp;
 	})
-});
+*/
+	$('.btnNext').click(function(){
+  		$('.nav-tabs > .active').next('li').find('a').trigger('click');
+	});
 
+	$('.btnNext').click(function () {
+    	var sum = 0;
+
+
+    	$('.membros').each(function() {
+        	sum += Number($(this).val());
+			membros += Number($(this).val());
+    	});
+
+		var aux = total;
+		console.log(sum);
+		console.log(membros);
+		console.log(aux);
+		for( i = aux; i < sum; i++ ){
+			$("#equipe-info").append(
+				"<label>MEMBRO " + (i + 1) + "</label>" +
+				"<div class='form-group'>" +
+				"<label>NOME COMPLETO</label>" +
+				"<input type='text' class='form-control'>" +
+				"</div>" +
+				"<div class='form-group'>" +
+				"<label>CPF</label>" +
+				"<input type='text' class='form-control'>" +
+				"</div>" +
+				"<div class='form-group'>" +
+				"<label>CARGA HORÁRIA SEMANAL</label>" +
+				"<input type='time' class='form-control'>" +
+				"</div>" +
+				"<div class='form-group'>" +
+				"<label>E-MAIL</label>" +
+				"<input type='text' class='form-control'>" +
+				"</div>" +
+				"<div class='form-group'>" +
+				"<label>FUNÇÃO</label>" +
+				"<input type='text' class='form-control'>" +
+				"</div><hr>");
+			total++;
+		};
+	});
+});
