@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -32,8 +32,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-id">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="home1.html">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                    <li class="active"><a href="home1.html">Página Inicial <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#login-modal"><b>Entrar</b></a></li>
                 </ul>
 
             </div><!-- /.navbar-collapse -->
@@ -45,6 +45,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h3>Login</h3>
+                        <p class="pull-left">Para entrar use usuário e senha do sistema acadêmico.</p>
                     </div>
                     <div class="modal-body">
                         <div class="container login">
@@ -52,7 +53,7 @@
                                 <input type="email" id="inputEmail" class="form-control" placeholder="Usuário" required autofocus>
                                 <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
                                 <div class="btn btn-lg btn-block">
-                                    <a class="btn btn-lg btn-primary btn-block" id="login-ok" href="home2.html">Login</a>
+                                    <a class="btn btn-lg btn-primary btn-block" id="login-ok" href="home2.html">Confirmar</a>
                                 </div>
                             </form>
                         </div>
@@ -66,12 +67,14 @@
     </div>
 
     <div class="container">
-        <img class="logo" src="https://yt3.ggpht.com/-I6xMA4mjCcE/AAAAAAAAAAI/AAAAAAAAAAA/JIFCpRrMCuA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="logo"/>
+        <div class="jumbotron">
+            <img class="logo" src="https://yt3.ggpht.com/-I6xMA4mjCcE/AAAAAAAAAAI/AAAAAAAAAAA/JIFCpRrMCuA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="logo"/>
+        </div>
         <hr/>
         <div class="row">
             <div class="col-md-6">
                 <ul class="list-group">
-                    <li class="list-group-item active"><h3>O que faz o DEPEX?</h3></li>
+                    <li class="list-group-item laranja"><h3>O que faz o DEPEX?</h3></li>
                     <li class="list-group-item info">Registro de ações de extensão</li>
                     <li class="list-group-item info">Emissão de declarações de participação aos professores coordenadores</li>
                     <li class="list-group-item info">Fomento à extensão no câmpus</li>
@@ -81,7 +84,7 @@
             </div>
             <div class="col-md-6">
                 <ul class="list-group">
-                    <li class="list-group-item active"><h3>O que é Extensão?</h3></li>
+                    <li class="list-group-item laranja"><h3>O que é Extensão?</h3></li>
                     <li class="list-group-item">
                         <p class="info text-justify">
                             "A Extensão Universitária, sob o princípio constitucional da indissociabilidade entre ensino, pesquisa e extensão, é um processo interdisciplinar, educativo, cultural, científico e político que promove a interação transformadora entre Universidade e outros setores da sociedade."
@@ -94,12 +97,12 @@
         <div class="row">
             <div class="col-md-12">
                 <ul class="list-group">
-                    <li class="list-group-item active"><h3>Notícias</h3></li>
-                    <li class="list-group-item info">Bla</li>
-                    <li class="list-group-item info">Ble</li>
-                    <li class="list-group-item info">Bli</li>
-                    <li class="list-group-item info">Blo</li>
-                    <li class="list-group-item info">Blu</li>
+                    <li class="list-group-item laranja"><h3>Como cadastrar um projeto de extensão?</h3></li>
+                    <li class="list-group-item info">Entre no sistema clicando em <b>"Entrar"</b> no canto superior direito na tela e informe usuário e senha (os mesmos do sistema acadêmico)</li>
+                    <li class="list-group-item info">Na nova tela, clique em <b>"Novo Projeto"</b></li>
+                    <li class="list-group-item info">Preencha o formulario com as informações pedidas e pronto!</li>
+                    <li class="list-group-item info">Agora é só aguardar a avaliação do projeto pela Chefia e pelo DEPEX</li>
+                    <li class="list-group-item info">Você pode acomapnhar o andamento na página "Ver Projetos"</li>
                 </ul>
             </div>
         </div>
