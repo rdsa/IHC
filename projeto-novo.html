@@ -42,17 +42,31 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
+
+    <div class="modal fade" id="proj-modal">
+        <div class="modal-dialog modal-dialog-center">
+            <div class="modal-content">
+                <div class="modal-header centered">
+                    <h3 class="text-center">Projeto Cadastrado com Sucesso!</h3>
+                    <center>
+                        <a id="new-project-button" href="projetos.html" class="btn btn-primary">Continuar</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div><!--/modal-->
+
     <div class="container">
-        <img class="logo" src="https://yt3.ggpht.com/-I6xMA4mjCcE/AAAAAAAAAAI/AAAAAAAAAAA/JIFCpRrMCuA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="logo"/>
-    </div>
-    <hr />
-    <div class="container">
-        <ul class="nav nav-tabs">
+        <div class="jumbotron">
+            <img class="logo" src="https://yt3.ggpht.com/-I6xMA4mjCcE/AAAAAAAAAAI/AAAAAAAAAAA/JIFCpRrMCuA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="logo"/>
+        </div>
+        <hr />
+        <ul class="nav nav-pills nav-justified">
             <li role="presentation" class="active"><a href="#1a" data-toggle="tab">Informações Gerais</a></li>
             <li role="presentation"><a href="#2a" data-toggle="tab">Sobre a Ação</a></li>
             <li role="presentation"><a href="#3a" data-toggle="tab">Desenvolvimento Sustentável</a></li>
             <li role="presentation"><a href="#4a" data-toggle="tab">Equipe Executora</a></li>
-            <li role="presentation"><a href="#5a" data-toggle="tab">Membros da Equipe</a></li>
+            <li role="presentation"><a id="prox" href="#5a" data-toggle="tab">Membros da Equipe</a></li>
             <li role="presentation"><a href="#6a" data-toggle="tab">Parcerias</a></li>
             <li role="presentation"><a href="#7a" data-toggle="tab">Projeto e Assinatura</a></li>
         </ul>
@@ -138,7 +152,7 @@
                             </div>
                         </div>
                     </form>
-                    <a class="btn btn-default pull-right btnNext" href="#2a" data-trigger="tab">Próximo</a>
+                    <a class="btn btn-primary pull-right btnNext" href="#2a" data-trigger="tab">Próximo</a>
                 </div>
             </div>
             <div class="tab-pane" id="2a">
@@ -257,7 +271,8 @@
                             </div>
                         </section>
                     </form>
-                    <a class="btn btn-default pull-right btnNext" href="#3a" data-trigger="tab">Próximo</a>
+                    <a class="btn btn-default pull-left btnPrev" href="#1a" data-trigger="tab">Voltar</a>
+                    <a class="btn btn-primary pull-right btnNext" href="#3a" data-trigger="tab">Próximo</a>
                 </div>
             </div>
 
@@ -375,7 +390,8 @@
                                 </div>
                             </section>
                         </form>
-                        <a class="btn btn-default pull-right btnNext" href="#4a" data-trigger="tab">Próximo</a>
+                        <a class="btn btn-default pull-left btnPrev" href="#2a" data-trigger="tab">Voltar</a>
+                        <a class="btn btn-primary pull-right btnNext" href="#4a" data-trigger="tab">Próximo</a>
                     </div>
                 </div>
             </div>
@@ -424,7 +440,8 @@
                                 </div>
                             </section>
                         </form>
-                        <a class="btn btn-default pull-right btnNext" href="#5a" data-trigger="tab">Próximo</a>
+                        <a class="btn btn-default pull-left btnPrev" href="#3a" data-trigger="tab">Voltar</a>
+                        <a class="btn btn-primary pull-right btnNext" href="#5a" data-trigger="tab">Próximo</a>
                     </div>
                 </div>
             </div>
@@ -440,7 +457,8 @@
                                 </div>
                             </section>
                         </form>
-                        <a class="btn btn-default pull-right btnNext" href="#6a" data-trigger="tab">Próximo</a>
+                        <a class="btn btn-default pull-left btnPrev" href="#4a" data-trigger="tab">Voltar</a>
+                        <a class="btn btn-primary pull-right btnNext" href="#6a" data-trigger="tab">Próximo</a>
                     </div>
                 </div>
             </div>
@@ -456,7 +474,8 @@
                             </div>
                         </section>
                     </form>
-                    <a class="btn btn-default pull-right btnNext" href="#7a" data-trigger="tab">Próximo</a>
+                    <a class="btn btn-default pull-left btnPrev" href="#5a" data-trigger="tab">Voltar</a>
+                    <a class="btn btn-primary pull-right btnNext" href="#7a" data-trigger="tab">Próximo</a>
                 </div>
             </div>
 
@@ -473,7 +492,8 @@
                                 <input>
                                 <h5>COORDENAÇÃO DA AÇÃO</h5>
                             </div>
-                            <a id="new-project-button" href="projetos.html#projeto-modal" class="btn btn-primary pull-right">Enviar</a>
+                            <a class="btn btn-default pull-left btnPrev" href="#6a" data-trigger="tab">Voltar</a>
+                            <a class="btn btn-success pull-right" data-toggle="modal" data-target="#proj-modal" data-backdrop="static">Enviar</a>
                         </form>
                     </div>
                 </div>

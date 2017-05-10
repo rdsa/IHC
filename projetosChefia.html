@@ -35,7 +35,6 @@
                     <li><p class="navbar-text">Olá, Chefia</p></li>
                     <li><a href="homeChefia.html">Home</a></li>
                     <li class="active"><a href="projetosChefia.html">Ver Projetos<span class="sr-only">(current)</span></a></li>
-                    <li><a href="projetoNovoChefia.html">Novo Projeto</a></li>
                     <li><a href="home1.html">Sair</a></li>
                 </ul>
 
@@ -43,70 +42,15 @@
         </div><!-- /.container-fluid -->
     </nav>
     <div class="container">
-        <img class="logo" src="https://yt3.ggpht.com/-I6xMA4mjCcE/AAAAAAAAAAI/AAAAAAAAAAA/JIFCpRrMCuA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="logo"/>
+        <div class="jumbotron">
+            <img class="logo" src="https://yt3.ggpht.com/-I6xMA4mjCcE/AAAAAAAAAAI/AAAAAAAAAAA/JIFCpRrMCuA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="logo"/>
+        </div>
     </div>
     <hr />
     <div class="container">
         <div class="panel-group">
             <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h4 class="panel-title">
-                        <a data-toggle="collapse" data-target="#proj-aprov">Projetos Próprios</a>
-                    </h4>
-                </div>
-                <div id="proj-aprov" class="panel-collapse collapse">
-                    <div class="panel-body">
-                        <div class="row">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Nome do projeto</th>
-                                        <th>Situação</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="success">
-                                        <td>1</td>
-                                        <td>Projeto 1</td>
-                                        <td>APROVADO</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr class="warning">
-                                        <td>2</td>
-                                        <td>Projeto 2</td>
-                                        <td>PENDENTE</td>
-                                        <td><a class="btn btn-default btn-xs pull-right" href="projetoEditChefia.html">Editar</a></td>
-                                    </tr>
-                                    <tr class="warning">
-                                        <td>3</td>
-                                        <td>Projeto 3</td>
-                                        <td>PENDENTE</td>
-                                        <td><a class="btn btn-default btn-xs pull-right" href="#">Editar</a></td>
-                                    </tr>
-                                    <tr class="warning">
-                                        <td>4</td>
-                                        <td>Projeto 4</td>
-                                        <td>PENDENTE</td>
-                                        <td><a class="btn btn-default btn-xs pull-right" href="#">Editar</a></td>
-                                    </tr>
-                                    <tr class="danger">
-                                        <td>5</td>
-                                        <td>Projeto 5</td>
-                                        <td>REPROVADO</td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="panel-group">
-            <div class="panel panel-default">
-                <div class="panel-heading">
+                <div class="panel-heading" data-toggle="collapse" data-target="#proj-pend">
                     <h4 class="panel-title">
                         <a data-toggle="collapse" data-target="#proj-pend">Projetos Pendentes</a>
                     </h4>

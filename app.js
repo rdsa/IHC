@@ -7,15 +7,12 @@ $(document).ready(function(){
 		}
 	});
 
-
 	var membros = 0;
 	var total = 0;
 
 	/*
 	$('#equipe-executora input').on('change', function(evt) {
 	var temp = parseInt($(this).val());
-
-
 
 	for( i = membros; i < temp + membros ; i++ ){
 	$("#equipe-info").append(
@@ -44,14 +41,18 @@ $(document).ready(function(){
 membros += temp;
 })
 */
+
 $('.btnNext').click(function(){
-	$('.nav-tabs > .active').next('li').find('a').trigger('click');
-	$("html, body").animate({ scrollTop: 250 }, 600);
+	$('.nav-pills > .active').next('li').find('a').trigger('click');
+	$("html, body").animate({ scrollTop: 400 }, 600);
+});
+$('.btnPrev').click(function(){
+	$('.nav-pills > .active').prev('li').find('a').trigger('click');
+	$("html, body").animate({ scrollTop: 400 }, 600);
 });
 
-$('.btnNext').click(function () {
+$('.btnNext, #prox').click(function () {
 	var sum = 0;
-
 
 	$('.membros').each(function() {
 		sum += Number($(this).val());
@@ -87,43 +88,5 @@ $('.btnNext').click(function () {
 			"</div><hr>");
 			total++;
 		};
-	});
-	(function() {
-		'use strict';
-
-		function remoteModal(idModal) {
-			var vm = this;
-			vm.modal = $(idModal);
-
-			if (vm.modal.length == 0) {
-				return false;
-			}
-
-			if (window.location.hash == idModal) {
-				openModal();
-			}
-
-			var services = {
-				open: openModal,
-				close: closeModal
-			};
-
-			return services;
-
-			// method to open modal
-			function openModal() {
-				vm.modal.modal('show');
-			}
-
-			// method to close modal
-			function closeModal() {
-				vm.modal.modal('hide');
-			}
-		}
-		Window.prototype.remoteModal = remoteModal;
-	})();
-
-	$(function() {
-		window.remoteModal('#projeto-modal');
 	});
 });

@@ -39,28 +39,25 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-    <div class="container">
-        <div class="modal fade" id="login-modal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3>Login</h3>
-                        <p class="pull-left">Para entrar use usuário e senha do sistema acadêmico.</p>
+    <div class="modal fade" id="login-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3>Login</h3>
+                    <p class="pull-left">Para entrar use usuário e senha do sistema acadêmico.</p>
+                </div>
+                <div class="modal-body">
+                    <div class="container login">
+                        <form class="form-signin">
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Usuário" required autofocus>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+                        </form>
                     </div>
-                    <div class="modal-body">
-                        <div class="container login">
-                            <form class="form-signin">
-                                <input type="email" id="inputEmail" class="form-control" placeholder="Usuário" required autofocus>
-                                <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
-                                <div class="btn btn-lg btn-block">
-                                    <a class="btn btn-lg btn-primary btn-block" id="login-ok" href="home2.html">Confirmar</a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                    <a class="btn btn-primary" id="login-ok" href="home2.html">Confirmar</a>
                 </div>
             </div>
         </div>
@@ -102,7 +99,7 @@
                     <li class="list-group-item info">Na nova tela, clique em <b>"Novo Projeto"</b></li>
                     <li class="list-group-item info">Preencha o formulario com as informações pedidas e pronto!</li>
                     <li class="list-group-item info">Agora é só aguardar a avaliação do projeto pela Chefia e pelo DEPEX</li>
-                    <li class="list-group-item info">Você pode acomapnhar o andamento na página "Ver Projetos"</li>
+                    <li class="list-group-item info">Você pode acompanhar o andamento dos seus projetos na página "Ver Projetos"</li>
                 </ul>
             </div>
         </div>
