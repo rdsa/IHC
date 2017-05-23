@@ -63,10 +63,7 @@ $('#butt, #prox').click(function () {
 	console.log(sum);
 	console.log(membros);
 	console.log(aux);
-	if (sum != 0) {
-		$("#equipe-info").empty();
 
-	}
 	for( i = aux; i < sum; i++ ){
 		$("#equipe-info").append(
 			"<label>MEMBRO " + (i + 1) + "</label>" +
