@@ -51,45 +51,51 @@ $('.btnPrev').click(function(){
 	$("html, body").animate({ scrollTop: 400 }, 600);
 });
 
-$('#butt, #prox').click(function () {
-	var sum = 0;
 
-	$('.membros').each(function() {
-		sum += Number($(this).val());
-		membros += Number($(this).val());
-	});
+	$('#prox').click(function () {
+		var sum = 0;
 
-	var aux = total;
-	console.log(sum);
-	console.log(membros);
-	console.log(aux);
+		$('.membros').each(function() {
+			sum += Number($(this).val());
+			membros += Number($(this).val());
+		});
 
-	for( i = aux; i < sum; i++ ){
-		$("#equipe-info").append(
-			"<label>MEMBRO " + (i + 1) + "</label>" +
-			"<div class='form-group'>" +
-			"<label>NOME COMPLETO</label>" +
-			"<input type='text' class='form-control'>" +
-			"</div>" +
-			"<div class='form-group'>" +
-			"<label>CPF</label>" +
-			"<input type='text' class='form-control'>" +
-			"</div>" +
-			"<div class='form-group'>" +
-			"<label>CARGA HORÁRIA SEMANAL</label>" +
-			"<input type='time' class='form-control'>" +
-			"</div>" +
-			"<div class='form-group'>" +
-			"<label>E-MAIL</label>" +
-			"<input type='text' class='form-control'>" +
-			"</div>" +
-			"<div class='form-group'>" +
-			"<label>FUNÇÃO</label>" +
-			"<input type='text' class='form-control'>" +
-			"</div><hr>");
-			total++;
-		};
-	});
+		var aux = total;
+		console.log(sum);
+		console.log(membros);
+		console.log(aux);
+
+		if(sum > 50) {
+			sum = 50;
+			alert("O limite de membros é 50.");
+		}
+
+		for( i = aux; i < sum; i++ ){
+			$("#equipe-info").append(
+				"<label>MEMBRO " + (i + 1) + "</label>" +
+				"<div class='form-group'>" +
+				"<label>NOME COMPLETO</label>" +
+				"<input type='text' class='form-control'>" +
+				"</div>" +
+				"<div class='form-group'>" +
+				"<label>CPF</label>" +
+				"<input type='text' class='form-control'>" +
+				"</div>" +
+				"<div class='form-group'>" +
+				"<label>CARGA HORÁRIA SEMANAL</label>" +
+				"<input type='time' class='form-control'>" +
+				"</div>" +
+				"<div class='form-group'>" +
+				"<label>E-MAIL</label>" +
+				"<input type='text' class='form-control'>" +
+				"</div>" +
+				"<div class='form-group'>" +
+				"<label>FUNÇÃO</label>" +
+				"<input type='text' class='form-control'>" +
+				"</div><hr>");
+				total++;
+			};
+		});
 });
 
 (function ($) {

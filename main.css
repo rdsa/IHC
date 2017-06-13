@@ -2,6 +2,10 @@ body {
     padding-top: 70px;
 }
 
+label {
+    text-transform: uppercase;
+}
+
 .modal-dialog-center {
     padding-top: 10%;
 }
