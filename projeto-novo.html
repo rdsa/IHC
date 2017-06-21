@@ -66,9 +66,8 @@
             <li role="presentation"><a href="#2a" data-toggle="tab">Sobre a Ação</a></li>
             <li role="presentation"><a href="#3a" data-toggle="tab">Desenvolvimento Sustentável</a></li>
             <li role="presentation"><a href="#4a" data-toggle="tab">Equipe Executora</a></li>
-            <li role="presentation"><a id="prox" href="#5a" data-toggle="tab">Membros da Equipe</a></li>
-            <li role="presentation"><a href="#6a" data-toggle="tab">Parcerias</a></li>
-            <li role="presentation"><a href="#7a" data-toggle="tab">Projeto e Assinatura</a></li>
+            <li role="presentation"><a href="#5a" data-toggle="tab">Parcerias</a></li>
+            <li role="presentation"><a href="#6a" data-toggle="tab">Projeto e Assinatura</a></li>
         </ul>
         <div class="tab-content clearfix">
             <div class="tab-pane active" id="1a">
@@ -97,18 +96,23 @@
                             <label>Departamento</label>
                             <select class="form-control" name="campus" id="campus" required>
                                 <option value="">SELECIONE</option>
-                                <option value="departamento 1">departamento 1</option>
-                                <option value="departamento 2">departamento 2</option>
-                                <option value="departamento 3">departamento 3</option>
+                                <option value="departamento 1">DAINF</option>
+                                <option value="departamento 2">DALEM</option>
+                                <option value="departamento 3">DAMEC</option>
+                                <option value="departamento 4">DAMAT</option>
+                                <option value="departamento 5">DAESO</option>
+                                <option value="departamento 6">DALIC</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label>Curso</label>
                             <select class="form-control" name="campus" id="campus" required>
                                 <option value="">SELECIONE</option>
-                                <option value="curso 1">curso 1</option>
-                                <option value="curso 2">curso 2</option>
-                                <option value="curso 3">curso 3</option>
+                                <option value="curso 1">Bacharelado em Sistemas de Informação</option>
+                                <option value="curso 2">Educação Física</option>
+                                <option value="curso 3">Engenharia da Computação</option>
+                                <option value="curso 4">Engenharia da Mecânica</option>
+                                <option value="curso 5">Letras</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -130,7 +134,7 @@
                             </select>
                         </div>
                         <p>
-                            <a href="http://www.utfpr.edu.br/estrutura-universitaria/pro-reitorias/prorec/diretoria-de-extensao/acoes-de-extensao-1/modalidades-de-extensao">Definições sobre Ações de Extensão</a>
+                            <a href="http://www.utfpr.edu.br/estrutura-universitaria/pro-reitorias/prorec/diretoria-de-extensao/acoes-de-extensao-1/modalidades-de-extensao" target="_blank">Definições sobre Ações de Extensão</a>
                         </p>
                         <div class="form-group">
                             <label>MODALIDADE</label><br>
@@ -283,7 +287,7 @@
                         <form>
                             <section class="subset">
                                 <h5>DESENVOLVIMENTO SUSTENTÁVEL </h5>
-                                <p><a href="https://nacoesunidas.org/conheca-os-novos-17-objetivos-de-desenvolvimento-sustentavel-da-onu/">Maiores informações sobre os Objetivos de Desenvolvimento Sustentável - ONU</a></p>
+                                <p><a href="https://nacoesunidas.org/conheca-os-novos-17-objetivos-de-desenvolvimento-sustentavel-da-onu/" target="_blank">Maiores informações sobre os Objetivos de Desenvolvimento Sustentável - ONU</a></p>
                                 <div class="form-group check">
                                     <label>ASSINALE (ATÉ 3) OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL RELACIONADOS COM SEU PROJETO</label>
                                     <div class="checkbox">
@@ -403,41 +407,68 @@
                         <form>
                             <section id="equipe-executora" class="subset">
                                 <h5>EQUIPE EXECUTORA</h5>
-                                <div class="form-group">
-                                    <label>QUANTIDADE DE DOCENTES</label>
-                                    <input type="number" class="form-control membros" min="0" max="10">
+                                <div>
+                                    <label>DOCENTES</label>
+                                    <button type="button" class="btn btn-success btn-sm adc pull-right" id="1">Adicionar</button>
+                                    <hr />
+                                    <div id="docentes">
+                                    </div>
                                 </div>
                                 <div>
-                                    <label>QUANTIDADE DE TÉCNICOS ADMINISTRATIVOS</label>
-                                    <input type="number" class="form-control membros" min="0" max="10">
+                                    <label>TÉCNICOS ADMINISTRATIVOS</label>
+                                    <button type="button" class="btn btn-success btn-sm adc pull-right" id="2">Adicionar</button>
+                                    <hr />
+                                    <div id="tecnicos">
+                                    </div>
                                 </div>
                                 <div>
-                                    <label>QUANTIDADE DE VOLUNTÁRIOS</label>
-                                    <input type="number" class="form-control membros" min="0" max="10">
+                                    <label>VOLUNTÁRIOS</label>
+                                    <button type="button" class="btn btn-success btn-sm adc pull-right" id="3">Adicionar</button>
+                                    <hr />
+                                    <div id="voluntarios">
+                                    </div>
                                 </div>
                                 <div>
-                                    <label>QUANTIDADE DE ESTUDANTES - UTFPR</label>
-                                    <input type="number" class="form-control membros" min="0" max="10">
+                                    <label>ESTUDANTES - UTFPR</label>
+                                    <button type="button" class="btn btn-success btn-sm adc pull-right" id="4">Adicionar</button>
+                                    <hr />
+                                    <div id="utfpr">
+                                    </div>
                                 </div>
                                 <div>
-                                    <label>QUANTIDADE DE ESTUDANTES - OUTRAS INSTITUIÇÕES</label>
-                                    <input type="number" class="form-control membros" min="0" max="10">
+                                    <label>ESTUDANTES - OUTRAS INSTITUIÇÕES</label>
+                                    <button type="button" class="btn btn-success btn-sm adc pull-right" id="5">Adicionar</button>
+                                    <hr />
+                                    <div id="outras">
+                                    </div>
                                 </div>
                                 <div>
-                                    <label>QUANTIDADE DE BOLSISTAS - PROREC</label>
-                                    <input type="number" class="form-control membros" min="0" max="10">
+                                    <label>BOLSISTAS - PROREC</label>
+                                    <button type="button" class="btn btn-success btn-sm adc pull-right" id="6">Adicionar</button>
+                                    <hr />
+                                    <div id="prorec">
+                                    </div>
                                 </div>
                                 <div>
-                                    <label>QUANTIDADE DE BOLSISTAS - FA PIBEX</label>
-                                    <input type="number" class="form-control membros" min="0" max="10">
+                                    <label>BOLSISTAS - FA PIBEX</label>
+                                    <button type="button" class="btn btn-success btn-sm adc pull-right" id="7">Adicionar</button>
+                                    <hr />
+                                    <div id="fapibex">
+                                    </div>
                                 </div>
                                 <div>
-                                    <label>QUANTIDADE DE BOLSISTAS - FA PIBIS</label>
-                                    <input type="number" class="form-control membros" min="0" max="10">
+                                    <label>BOLSISTAS - FA PIBIS</label>
+                                    <button type="button" class="btn btn-success btn-sm adc pull-right" id="8">Adicionar</button>
+                                    <hr />
+                                    <div id="fapibis">
+                                    </div>
                                 </div>
                                 <div>
                                     <label>QUANTIDADE DE BOLSISTAS - PET</label>
-                                    <input type="number" class="form-control membros" min="0" max="10">
+                                    <button type="button" class="btn btn-success btn-sm adc pull-right" id="9">Adicionar</button>
+                                    <hr />
+                                    <div id="pet">
+                                    </div>
                                 </div>
                             </section>
                         </form>
@@ -446,25 +477,7 @@
                     </div>
                 </div>
             </div>
-
             <div class="tab-pane" id="5a">
-                <div class="row">
-                    <div class="col-md-offset-2 col-md-8">
-                        <form>
-                            <section class="subset">
-                                <h5>INFORMAÇÕES DA EQUIPE</h5>
-                                <div id=equipe-info>
-                                    <h4>Você não adicionou membros à equipe executora. </h4>
-                                </div>
-                            </section>
-                        </form>
-                        <a class="btn btn-default btnPrev" href="#4a" data-trigger="tab">Voltar</a>
-                        <a class="btn btn-primary pull-right btnNext" href="#6a" data-trigger="tab">Próximo</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="tab-pane" id="6a">
                 <div class="col-md-offset-2 col-md-8">
                     <form>
                         <section class="subset">
@@ -474,9 +487,8 @@
                                 <div>
                                         <div class="contacts">
                                                 <div class="form-group multiple-form-group input-group">
-
                                                     <input type="text" name="contacts['value'][]" class="form-control" style="width:48%; margin-right: 10px">
-                                                    <input type="text" name="contacts['value'][]" class="form-control" style="width:48%;"">
+                                                    <input type="text" name="contacts['value'][]" class="form-control" style="width:48%;">
                                                     <span class="input-group-btn">
                                                         <button type="button" class="btn btn-success btn-add">+</button>
                                                     </span>
@@ -492,7 +504,7 @@
                 </div>
             </div>
 
-            <div class="tab-pane" id="7a">
+            <div class="tab-pane" id="6a">
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8">
                         <form>

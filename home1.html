@@ -51,7 +51,7 @@
                     <div class="container login">
                         <form class="form-signin">
                             <input type="email" id="inputEmail" class="form-control" placeholder="Usuário" required autofocus>
-                            <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required onkeydown = "if (event.keyCode == 13) document.getElementById('login-ok').click()">
                         </form>
                     </div>
                 </div>
@@ -68,6 +68,18 @@
             <img class="logo" src="https://yt3.ggpht.com/-I6xMA4mjCcE/AAAAAAAAAAI/AAAAAAAAAAA/JIFCpRrMCuA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="logo"/>
         </div>
         <hr/>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="list-group">
+                    <li class="list-group-item laranja"><h3>Como cadastrar um projeto de extensão?</h3></li>
+                    <li class="list-group-item info">Entre no sistema clicando em <b>"Entrar"</b> no canto superior direito na tela e informe usuário e senha (os mesmos do sistema acadêmico)</li>
+                    <li class="list-group-item info">Na nova tela, clique em <b>"Novo Projeto"</b></li>
+                    <li class="list-group-item info">Preencha o formulario com as informações pedidas e pronto!</li>
+                    <li class="list-group-item info">Agora basta aguardar a avaliação do projeto pela Chefia e pelo DEPEX</li>
+                    <li class="list-group-item info">Você pode acompanhar o andamento dos seus projetos na página "Ver Projetos"</li>
+                </ul>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-6">
                 <ul class="list-group">
@@ -88,18 +100,6 @@
                             <br /><br /><br /><br />(Plano Nacional de Extensão, 2012)
                         </p>
                     </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="list-group">
-                    <li class="list-group-item laranja"><h3>Como cadastrar um projeto de extensão?</h3></li>
-                    <li class="list-group-item info">Entre no sistema clicando em <b>"Entrar"</b> no canto superior direito na tela e informe usuário e senha (os mesmos do sistema acadêmico)</li>
-                    <li class="list-group-item info">Na nova tela, clique em <b>"Novo Projeto"</b></li>
-                    <li class="list-group-item info">Preencha o formulario com as informações pedidas e pronto!</li>
-                    <li class="list-group-item info">Agora é só aguardar a avaliação do projeto pela Chefia e pelo DEPEX</li>
-                    <li class="list-group-item info">Você pode acompanhar o andamento dos seus projetos na página "Ver Projetos"</li>
                 </ul>
             </div>
         </div>
