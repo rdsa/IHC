@@ -1,14 +1,16 @@
 $(document).ready(function(){
+	$("#inputPassword").keyup(function(event){
+		if(event.keyCode == 13){
+			$("#login-ok").click();
+		}
+	});
+
 	var limit = 4;
 	$('.form-group .checkbox input').on('change', function(evt) {
 		if($('.check input[type="checkbox"]:checked').length >= limit) {
 			this.checked = false;
-			console.log('foi')
 		}
 	});
-
-	var membros = 0;
-	var total = 0;
 
 	$('.btnNext').click(function(){
 		$('.nav-pills > .active').next('li').find('a').trigger('click');
@@ -18,14 +20,15 @@ $(document).ready(function(){
 		$('.nav-pills > .active').prev('li').find('a').trigger('click');
 		$("html, body").animate({ scrollTop: 400 }, 600);
 	});
-	var max_fields      = 10; //maximum input boxes allowed
+
+	var max_fields = 10; //max
 	var wrapper;
 	var id;
-	var x = 0; //initlal text box count
+	var x = 0;
 
-	$(".adc").click(function(e){ //on add input button click
+	$(".adc").click(function(e){
 		e.preventDefault();
-		id = $(this).attr('id'); // $(this) refers to button that was clicked
+		id = $(this).attr('id');
 		switch (id) {
 			case '1':
 			wrapper = "#docentes";
@@ -57,86 +60,39 @@ $(document).ready(function(){
 			default:
 			break;
 		}
-		if(x < max_fields){ //max input box allowed
-			x++; //text box increment
-			$(wrapper).append("<div><div class='form-group'><label>NOME COMPLETO</label><input type='text' class='form-control'></div><div class='form-group'><label>CPF</label><input type='text' class='form-control'></div><div class='form-group'><label>CARGA HORÁRIA SEMANAL</label><input type='time' class='form-control'></div><div class='form-group'><label>E-MAIL</label><input type='text' class='form-control'></div><div class='form-group'><label>FUNÇÃO</label><input type='text' class='form-control'></div><button class='btn btn-danger bnt-sm remove_field'>Remover</button><hr></div>"); //add input box
+		if(x < max_fields){
+			x++;
+			$(wrapper).append("<div><div class='form-group'><label>NOME COMPLETO</label><input type='text' class='form-control'></div><div class='form-group'><label>CPF</label><input type='text' class='form-control'></div><div class='form-group'><label>CARGA HORÁRIA SEMANAL</label><input type='time' class='form-control'></div><div class='form-group'><label>E-MAIL</label><input type='text' class='form-control'></div><div class='form-group'><label>FUNÇÃO</label><input type='text' class='form-control'></div><div class='clearfix'><button class='btn btn-danger bnt-sm remove_field pull-right'>Remover</button></div><hr></div>"); //add input box
 		}
 		else{
 			alert("Limite de membros atingido!");
 		}
 	});
 
-	$(document).on('click', '.remove_field', function(e){ //user click on remove text
+	$(document).on('click', '.remove_field', function(e){
 		e.preventDefault();
-		$(this).parent('div').remove();
+		var pi = $(this).parent('div')
+		pi.parent('div').remove();
+		pi.remove();
 		x--;
 	});
 
-	$("#inputPassword").keyup(function(event){
-		console.log("OLA");
-		if(event.keyCode == 13){
-			$("#login-ok").click();
+	var y = 0;
+
+	$(".prc").click(function(e){
+		e.preventDefault();
+		if(y < max_fields){
+			y++;
+			$('#parceria').append("<div class='parc'><div class='row'><div class='col-lg-6'><label>NOME DA ORGANIZAÇÃO</label><div class='row'><div class='col-xs-12'><div class='form-group'><input type='text' class='form-control'/></div></div></div></div><div class='col-lg-6'><label>CONTRAPARTIDA OFERECIDA</label><div class='row'><div class='col-xs-10'><div class='form-group'><input type='text' class='form-control'/></div></div><div class='col-xs-2'><div class='form-group'><div class='btn btn-danger remove_parc'><span class='glyphicon glyphicon-remove'></span></div></div></div></div></div></div><hr/></div>"); //add input box
 		}
+		else{
+			alert("Limite de parcerias atingido!");
+		}
+	});
+
+	$(document).on('click', '.remove_parc', function(e){
+		e.preventDefault();
+		$(this).closest('.parc').remove();
+		y--;
 	});
 });
-
-(function ($) {
-	$(function () {
-
-		var addFormGroup = function (event) {
-			event.preventDefault();
-
-			var $formGroup = $(this).closest('.form-group');
-			var $multipleFormGroup = $formGroup.closest('.multiple-form-group');
-			var $formGroupClone = $formGroup.clone();
-
-			$(this)
-			.toggleClass('btn-success btn-add btn-danger btn-remove')
-			.html('–');
-
-			$formGroupClone.find('input').val('');
-			$formGroupClone.find('.concept').text('Phone');
-			$formGroupClone.insertAfter($formGroup);
-
-			var $lastFormGroupLast = $multipleFormGroup.find('.form-group:last');
-			if ($multipleFormGroup.data('max') <= countFormGroup($multipleFormGroup)) {
-				$lastFormGroupLast.find('.btn-add').attr('disabled', true);
-			}
-		};
-
-		var removeFormGroup = function (event) {
-			event.preventDefault();
-
-			var $formGroup = $(this).closest('.form-group');
-			var $multipleFormGroup = $formGroup.closest('.multiple-form-group');
-
-			var $lastFormGroupLast = $multipleFormGroup.find('.form-group:last');
-			if ($multipleFormGroup.data('max') >= countFormGroup($multipleFormGroup)) {
-				$lastFormGroupLast.find('.btn-add').attr('disabled', false);
-			}
-
-			$formGroup.remove();
-		};
-
-		var selectFormGroup = function (event) {
-			event.preventDefault();
-
-			var $selectGroup = $(this).closest('.input-group-select');
-			var param = $(this).attr("href").replace("#","");
-			var concept = $(this).text();
-
-			$selectGroup.find('.concept').text(concept);
-			$selectGroup.find('.input-group-select-val').val(param);
-
-		}
-
-		var countFormGroup = function ($form) {
-			return $form.find('.form-group').length;
-		};
-
-		$(document).on('click', '.btn-add', addFormGroup);
-		$(document).on('click', '.btn-remove', removeFormGroup);
-		$(document).on('click', '.dropdown-menu a', selectFormGroup);
-
-	});
-})(jQuery);

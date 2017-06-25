@@ -73,88 +73,91 @@
             <div class="tab-pane active" id="1a">
                 <div class="col-md-offset-2 col-md-8">
                     <form>
-                        <div class="form-group">
-                            <label>Campus</label>
-                            <select class="form-control" name="campus" id="campus" required>
-                                <option value="">SELECIONE</option>
-                                <option value="APUCARANA">APUCARANA</option>
-                                <option value="CAMPO MOURÃO">CAMPO MOURÃO</option>
-                                <option value="CORNÉLIO PROCÓPIO">CORNÉLIO PROCÓPIO</option>
-                                <option value="CURITIBA">CURITIBA</option>
-                                <option value="DOIS VIZINHOS">DOIS VIZINHOS</option>
-                                <option value="FRANCISCO BELTRÃO">FRANCISCO BELTRÃO</option>
-                                <option value="GUARAPUAVA">GUARAPUAVA</option>
-                                <option value="LONDRINA">LONDRINA</option>
-                                <option value="MEDIANEIRA">MEDIANEIRA</option>
-                                <option value="PATO BRANCO">PATO BRANCO</option>
-                                <option value="PONTA GROSSA">PONTA GROSSA</option>
-                                <option value="SANTA HELENA">SANTA HELENA</option>
-                                <option value="TOLEDO">TOLEDO</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Departamento</label>
-                            <select class="form-control" name="campus" id="campus" required>
-                                <option value="">SELECIONE</option>
-                                <option value="departamento 1">DAINF</option>
-                                <option value="departamento 2">DALEM</option>
-                                <option value="departamento 3">DAMEC</option>
-                                <option value="departamento 4">DAMAT</option>
-                                <option value="departamento 5">DAESO</option>
-                                <option value="departamento 6">DALIC</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Curso</label>
-                            <select class="form-control" name="campus" id="campus" required>
-                                <option value="">SELECIONE</option>
-                                <option value="curso 1">Bacharelado em Sistemas de Informação</option>
-                                <option value="curso 2">Educação Física</option>
-                                <option value="curso 3">Engenharia da Computação</option>
-                                <option value="curso 4">Engenharia da Mecânica</option>
-                                <option value="curso 5">Letras</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Setor</label>
-                            <select class="form-control" name="campus" id="campus" required>
-                                <option value="">SELECIONE</option>
-                                <option value="setor 1">setor 1</option>
-                                <option value="setor 2">setor 2</option>
-                                <option value="setor 3">setor 3</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Status da Atividade</label>
-                            <select class="form-control" name="campus" id="campus" required>
-                                <option value="">SELECIONE</option>
-                                <option value="PROPOSTA">PROPOSTA</option>
-                                <option value="EM ANDAMENTO">EM ANDAMENTO</option>
-                                <option value="CONCLUÍDA">CONCLUÍDA</option>
-                            </select>
-                        </div>
-                        <p>
-                            <a href="http://www.utfpr.edu.br/estrutura-universitaria/pro-reitorias/prorec/diretoria-de-extensao/acoes-de-extensao-1/modalidades-de-extensao" target="_blank">Definições sobre Ações de Extensão</a>
-                        </p>
-                        <div class="form-group">
-                            <label>MODALIDADE</label><br>
-                            <em>OBS: OS CURSOS DE EXTENSÃO DEVERÃO SER ENCAMINHADOS AO DEPEC.</em>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios" required> Programa (mínimo de 4 anos de duração, composto no mínimo por 2 Projetos)
-                                </label>
+                        <section class="subset">
+                            <h5>INFORMAÇÕES GERAIS</h5>
+                            <div class="form-group">
+                                <label>Campus</label>
+                                <select class="form-control" name="campus" id="campus" required>
+                                    <option value="">SELECIONE</option>
+                                    <option value="APUCARANA">APUCARANA</option>
+                                    <option value="CAMPO MOURÃO">CAMPO MOURÃO</option>
+                                    <option value="CORNÉLIO PROCÓPIO">CORNÉLIO PROCÓPIO</option>
+                                    <option value="CURITIBA">CURITIBA</option>
+                                    <option value="DOIS VIZINHOS">DOIS VIZINHOS</option>
+                                    <option value="FRANCISCO BELTRÃO">FRANCISCO BELTRÃO</option>
+                                    <option value="GUARAPUAVA">GUARAPUAVA</option>
+                                    <option value="LONDRINA">LONDRINA</option>
+                                    <option value="MEDIANEIRA">MEDIANEIRA</option>
+                                    <option value="PATO BRANCO">PATO BRANCO</option>
+                                    <option value="PONTA GROSSA">PONTA GROSSA</option>
+                                    <option value="SANTA HELENA">SANTA HELENA</option>
+                                    <option value="TOLEDO">TOLEDO</option>
+                                </select>
                             </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios"> Projeto (mínimo de 12 meses de duração)
-                                </label>
+                            <div class="form-group">
+                                <label>Departamento</label>
+                                <select class="form-control" name="campus" id="campus" required>
+                                    <option value="">SELECIONE</option>
+                                    <option value="departamento 1">DAINF</option>
+                                    <option value="departamento 2">DALEM</option>
+                                    <option value="departamento 3">DAMEC</option>
+                                    <option value="departamento 4">DAMAT</option>
+                                    <option value="departamento 5">DAESO</option>
+                                    <option value="departamento 6">DALIC</option>
+                                </select>
                             </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios"> Evento (palestra/seminário/exposição/semana acadêmica/Feira/ Campeonato/Oficina etc...)
-                                </label>
+                            <div class="form-group">
+                                <label>Curso</label>
+                                <select class="form-control" name="campus" id="campus" required>
+                                    <option value="">SELECIONE</option>
+                                    <option value="curso 1">Bacharelado em Sistemas de Informação</option>
+                                    <option value="curso 2">Educação Física</option>
+                                    <option value="curso 3">Engenharia da Computação</option>
+                                    <option value="curso 4">Engenharia da Mecânica</option>
+                                    <option value="curso 5">Letras</option>
+                                </select>
                             </div>
-                        </div>
+                            <div class="form-group">
+                                <label>Setor</label>
+                                <select class="form-control" name="campus" id="campus" required>
+                                    <option value="">SELECIONE</option>
+                                    <option value="setor 1">setor 1</option>
+                                    <option value="setor 2">setor 2</option>
+                                    <option value="setor 3">setor 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Status da Atividade</label>
+                                <select class="form-control" name="campus" id="campus" required>
+                                    <option value="">SELECIONE</option>
+                                    <option value="PROPOSTA">PROPOSTA</option>
+                                    <option value="EM ANDAMENTO">EM ANDAMENTO</option>
+                                    <option value="CONCLUÍDA">CONCLUÍDA</option>
+                                </select>
+                            </div>
+                            <p>
+                                <a href="http://www.utfpr.edu.br/estrutura-universitaria/pro-reitorias/prorec/diretoria-de-extensao/acoes-de-extensao-1/modalidades-de-extensao" target="_blank">Definições sobre Ações de Extensão</a>
+                            </p>
+                            <div class="form-group">
+                                <label>MODALIDADE</label><br>
+                                <em>OBS: OS CURSOS DE EXTENSÃO DEVERÃO SER ENCAMINHADOS AO DEPEC.</em>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" required> Programa (mínimo de 4 anos de duração, composto no mínimo por 2 Projetos)
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios"> Projeto (mínimo de 12 meses de duração)
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios"> Evento (palestra/seminário/exposição/semana acadêmica/Feira/ Campeonato/Oficina etc...)
+                                    </label>
+                                </div>
+                            </div>
+                        </section>
                     </form>
                     <a class="btn btn-danger" href="home2.html">Cancelar</a>
                     <a class="btn btn-primary pull-right btnNext" href="#2a" data-trigger="tab">Próximo</a>
@@ -482,21 +485,34 @@
                     <form>
                         <section class="subset">
                             <h5>INFORMAÇÕES SOBRE PARCERIAS</h5>
-                            <div class="form-group">
-                                <label>NOME DA ORGANIZAÇÃO/EMPRESA/DEPTO - CONTRAPARTIDA OFERECIDA/FOMENTO</label>
-                                <div>
-                                        <div class="contacts">
-                                                <div class="form-group multiple-form-group input-group">
-                                                    <input type="text" name="contacts['value'][]" class="form-control" style="width:48%; margin-right: 10px">
-                                                    <input type="text" name="contacts['value'][]" class="form-control" style="width:48%;">
-                                                    <span class="input-group-btn">
-                                                        <button type="button" class="btn btn-success btn-add">+</button>
-                                                    </span>
+                            <div id='parceria'>
+                                <div class="row">
+                                    <div class='col-lg-6'>
+                                        <label>NOME DA ORGANIZAÇÃO</label>
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <div class="form-group">
+                                                    <input type='text' class='form-control'/>
                                                 </div>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class='col-lg-6'>
+                                        <label>CONTRAPARTIDA OFERECIDA</label>
+                                        <div class="row">
+                                            <div class='col-xs-10'>
+                                                <div class="form-group">
+                                                    <input type='text' class='form-control'/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr/>
                             </div>
-
+                            <div class="clearfix">
+                                <button type="button" class="btn btn-success prc pull-right">Adicionar</button>
+                            </div>
                         </section>
                     </form>
                     <a class="btn btn-default btnPrev" href="#5a" data-trigger="tab">Voltar</a>
@@ -508,17 +524,20 @@
                 <div class="row">
                     <div class="col-md-offset-2 col-md-8">
                         <form>
-                            <div class="form-group">
-                                <label>PROJETO OU PROGRAMA - Enviar o arquivo em PDF </label>
-                                <input type="file">
-                                <p class="help-block">OBS: O máximo do arquivo é de 5 MB</p>
-                            </div>
-                            <div class="signature">
-                                <input>
-                                <h5>COORDENAÇÃO DA AÇÃO</h5>
-                            </div>
-                            <a class="btn btn-default btnPrev" href="#6a" data-trigger="tab">Voltar</a>
-                            <a class="btn btn-success pull-right" data-toggle="modal" data-target="#proj-modal" data-backdrop="static">Enviar</a>
+                            <section class="subset">
+                                <h5>INFORMAÇÕES GERAIS</h5>
+                                <div class="form-group">
+                                    <label>PROJETO OU PROGRAMA - Enviar o arquivo em PDF </label>
+                                    <input type="file">
+                                    <p class="help-block">OBS: O tamanho máximo do arquivo é de 5 MB</p>
+                                </div>
+                                <div class="signature">
+                                    <input>
+                                    <h6>COORDENAÇÃO DA AÇÃO</h6>
+                                </div>
+                                <a class="btn btn-default btnPrev" href="#6a" data-trigger="tab">Voltar</a>
+                                <a class="btn btn-success pull-right" data-toggle="modal" data-target="#proj-modal" data-backdrop="static">Enviar</a>
+                            </section>
                         </form>
                     </div>
                 </div>
